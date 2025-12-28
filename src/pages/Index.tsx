@@ -35,23 +35,23 @@ const Index = () => {
     {
       id: 1,
       date: '28 декабря 2024',
-      time: '17:00 МСК',
+      time: '18:00 МСК',
       status: 'upcoming',
       fighter1: {
         id: 1,
         name: 'АРС',
         nickname: 'Блондин',
-        record: '12-2-0',
+        record: '2-0-0',
         country: '🇷🇺',
-        odds: 1.75
+        odds: 1.45
       },
       fighter2: {
         id: 2,
         name: 'АРАМ',
         nickname: 'Морозов',
-        record: '15-4-0',
+        record: '0-0-0',
         country: '🇷🇺',
-        odds: 2.05
+        odds: 2.75
       }
     }
   ];
@@ -89,7 +89,7 @@ const Index = () => {
             <div className="flex justify-center gap-4 pt-4">
               <Badge variant="secondary" className="text-lg px-6 py-2 animate-pulse-glow">
                 <Icon name="Flame" className="mr-2" size={20} />
-                Бой сегодня в 17:00
+                Бой сегодня в 18:00
               </Badge>
             </div>
           </div>
@@ -131,6 +131,13 @@ const Index = () => {
 
                 <div className="grid md:grid-cols-[1fr,auto,1fr] gap-6 items-center">
                   <div className="space-y-3 text-center md:text-right">
+                    <div className="flex flex-col items-center md:items-end mb-3">
+                      <img 
+                        src="https://cdn.poehali.dev/projects/bb796026-b353-4c6b-b283-ab4561272180/files/166f9bac-964f-4da9-a086-d7016abe9881.jpg" 
+                        alt={fight.fighter1.name}
+                        className="w-32 h-32 rounded-full object-cover border-4 border-primary shadow-lg"
+                      />
+                    </div>
                     <div>
                       <h3 className="text-2xl font-bold text-foreground">{fight.fighter1.name}</h3>
                       <p className="text-primary font-semibold text-lg">"{fight.fighter1.nickname}"</p>
@@ -172,6 +179,13 @@ const Index = () => {
                   </div>
 
                   <div className="space-y-3 text-center md:text-left">
+                    <div className="flex flex-col items-center md:items-start mb-3">
+                      <img 
+                        src="https://cdn.poehali.dev/projects/bb796026-b353-4c6b-b283-ab4561272180/files/90ab52e4-5c5f-447c-a909-457d323a515e.jpg" 
+                        alt={fight.fighter2.name}
+                        className="w-32 h-32 rounded-full object-cover border-4 border-primary shadow-lg"
+                      />
+                    </div>
                     <div>
                       <h3 className="text-2xl font-bold text-foreground">{fight.fighter2.name}</h3>
                       <p className="text-primary font-semibold text-lg">"{fight.fighter2.nickname}"</p>
