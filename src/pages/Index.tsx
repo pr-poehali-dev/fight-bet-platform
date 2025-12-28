@@ -34,46 +34,24 @@ const Index = () => {
   const fights: Fight[] = [
     {
       id: 1,
-      date: '15 января 2025',
-      time: '22:00 МСК',
+      date: '28 декабря 2024',
+      time: '17:00 МСК',
       status: 'upcoming',
       fighter1: {
         id: 1,
-        name: 'Иван Петров',
-        nickname: 'Молот',
-        record: '18-3-0',
+        name: 'АРС',
+        nickname: 'Блондин',
+        record: '12-2-0',
         country: '🇷🇺',
-        odds: 1.85
+        odds: 1.75
       },
       fighter2: {
         id: 2,
-        name: 'Джон Смит',
-        nickname: 'Железный',
-        record: '22-5-1',
-        country: '🇺🇸',
-        odds: 2.10
-      }
-    },
-    {
-      id: 2,
-      date: '20 января 2025',
-      time: '23:30 МСК',
-      status: 'upcoming',
-      fighter1: {
-        id: 3,
-        name: 'Хабиб Магомедов',
-        nickname: 'Орёл',
-        record: '29-0-0',
+        name: 'АРАМ',
+        nickname: 'Морозов',
+        record: '15-4-0',
         country: '🇷🇺',
-        odds: 1.45
-      },
-      fighter2: {
-        id: 4,
-        name: 'Конор МакГрегор',
-        nickname: 'Ноториус',
-        record: '22-6-0',
-        country: '🇮🇪',
-        odds: 2.85
+        odds: 2.05
       }
     }
   ];
@@ -111,7 +89,7 @@ const Index = () => {
             <div className="flex justify-center gap-4 pt-4">
               <Badge variant="secondary" className="text-lg px-6 py-2 animate-pulse-glow">
                 <Icon name="Flame" className="mr-2" size={20} />
-                2 боя сегодня
+                Бой сегодня в 17:00
               </Badge>
             </div>
           </div>
